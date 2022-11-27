@@ -1,11 +1,11 @@
 [
   {
-    "name": "haba2",
+    "displayName": "haba2",
     "email": "haba2@gmail.com",
     "usertype": "Buyer"
   },
   {
-    "name": "haba3",
+    "displayName": "haba3",
     "email": "haba3@gmail.com",
     "usertype": "Buyer"
   }
