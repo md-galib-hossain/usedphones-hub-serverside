@@ -30,6 +30,8 @@ async function run() {
       .db("usedphones-hub")
       .collection("products");
 
+    const bookedCollection = client.db("usedphones-hub").collection("booked");
+
     const userCollection = client.db("usedphones-hub").collection("users");
 
     //Load Category
@@ -67,6 +69,15 @@ async function run() {
       const query = { email: email };
       const user = await userCollection.find(query).toArray();
       res.send(user);
+    });
+    // get booked items
+    app.get("/bookeditems", async (req, res) => {
+      const email = req.query.email;
+
+      const query = { email: email };
+      const bookedItems = await bookedCollection.find(query).toArray();
+
+      res.send(bookedItems);
     });
   } finally {
   }

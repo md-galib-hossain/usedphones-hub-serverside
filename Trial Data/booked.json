@@ -1,5 +1,16 @@
 [
   {
-    "email": ""
+    "idno": 1,
+    "brand": "Samsung",
+    "img": "",
+    "name": "Galaxy A7",
+    "picture": "https://i.ibb.co/vqZLsJj/galaxya7.png",
+    "location": "Faridpur",
+    "resaleprice": "12000",
+    "orginalprice": "33000",
+    "used": "6 months",
+    "condition": "Good",
+    "sellername": "Galib",
+    "email": "haba5@gmail.com"
   }
 ]

@@ -5,12 +5,13 @@
     "img": "",
     "name": "Galaxy A7",
     "picture": "https://i.ibb.co/vqZLsJj/galaxya7.png",
-    "location": "4992 south Avenue Jaccam, NE 345",
-    "resaleprice": "120",
-    "orginalprice": "330",
+    "location": "Faridpur",
+    "resaleprice": "12000",
+    "orginalprice": "33000",
     "used": "6 months",
     "condition": "Good",
-    "sellername": "Galib"
+    "sellername": "Galib",
+    "email": "haba6@gmail.com"
   },
   {
     "idno": 1,
@@ -19,11 +20,12 @@
     "name": "Galaxy Note 10 Ultra",
     "picture": "https://i.ibb.co/1TjvfKm/note10ultra.png",
     "location": "92 north Avenue Jaccam, NE 345",
-    "resaleprice": "229",
-    "orginalprice": "780",
+    "resaleprice": "22009",
+    "orginalprice": "78000",
     "used": "8 months",
     "condition": "Good",
-    "sellername": "Shawun"
+    "sellername": "Shawun",
+    "email": "haba7@gmail.com"
   },
   {
     "idno": 1,
@@ -32,11 +34,12 @@
     "name": "Galaxy Note 20 Ultra",
     "picture": "https://i.ibb.co/RB0qMpq/note20ultra.png",
     "location": "Westham, NE 345",
-    "resaleprice": "489",
-    "orginalprice": "940",
+    "resaleprice": "48009",
+    "orginalprice": "94000",
     "used": "1 year",
     "condition": "Good",
-    "sellername": "Sakhwat"
+    "sellername": "Sakhwat",
+    "email": "haba9@gmail.com"
   },
   {
     "idno": 2,
@@ -49,7 +52,8 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Latu"
+    "sellername": "Latu",
+    "email": "haba6@gmail.com"
   },
   {
     "idno": 2,
@@ -62,7 +66,8 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Fuad"
+    "sellername": "Fuad",
+    "email": "haba7@gmail.com"
   },
   {
     "idno": 2,
@@ -75,7 +80,8 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Shakil"
+    "sellername": "Shakil",
+    "email": "haba7@gmail.com"
   },
   {
     "idno": 3,
@@ -88,7 +94,8 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Shariful"
+    "sellername": "Shariful",
+    "email": "haba6@gmail.com"
   },
   {
     "idno": 3,
@@ -101,7 +108,8 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Mahin"
+    "sellername": "Mahin",
+    "email": "haba9@gmail.com"
   },
   {
     "idno": 3,
@@ -114,6 +122,7 @@
     "orginalprice": "",
     "used": "",
     "condition": "",
-    "sellername": "Rakib"
+    "sellername": "Rakib",
+    "email": "haba6@gmail.com"
   }
 ]
