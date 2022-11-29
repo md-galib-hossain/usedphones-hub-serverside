@@ -49,6 +49,13 @@ async function run() {
       const products = await cursor.toArray();
       res.send(products);
     });
+    // Load all products in seller account
+    app.get("/products", async (req, res) => {
+      const email = req.query.email;
+      const query = { email: email };
+      const products = await productCollection.find(query).toArray();
+      res.send(products);
+    });
     // add users
     app.post("/users", async (req, res) => {
       const user = req.body;
@@ -78,6 +85,15 @@ async function run() {
       const bookedItems = await bookedCollection.find(query).toArray();
 
       res.send(bookedItems);
+    });
+    // get single bookeditem
+    app.get("/dashboard/payment/:id", async (req, res) => {
+      const id = req.params.id;
+
+      const query = { _id: ObjectId(id) };
+      const bookedItem = await bookedCollection.findOne(query);
+
+      res.send(bookedItem);
     });
     // add to  booked
     app.post("/addbooked", async (req, res) => {
