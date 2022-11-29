@@ -101,6 +101,20 @@ async function run() {
       const result = await bookedCollection.insertOne(booked);
       res.send(result);
     });
+    // add product
+    app.post("/addproduct", async (req, res) => {
+      const product = req.body;
+      const result = await productCollection.insertOne(product);
+      res.send(result);
+    });
+
+    // delete
+    app.delete("/delete/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await productCollection.deleteOne(query);
+      res.send(result);
+    });
   } finally {
   }
 }

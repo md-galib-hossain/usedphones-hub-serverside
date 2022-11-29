@@ -13,7 +13,9 @@
     "sellername": "Galib",
     "email": "haba6@gmail.com",
     "isbooked": "yes",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
   {
     "idno": 1,
@@ -29,7 +31,9 @@
     "sellername": "Shawun",
     "email": "haba7@gmail.com",
     "isbooked": "no",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
   {
     "idno": 1,
@@ -42,10 +46,12 @@
     "orginalprice": "94000",
     "used": "1 year",
     "condition": "Good",
-    "sellername": "Sakhwat",
+    "sellername": "Mahin",
     "email": "haba9@gmail.com",
     "isbooked": "yes",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
   {
     "idno": 2,
@@ -58,10 +64,12 @@
     "orginalprice": "90000",
     "used": "8 months",
     "condition": "good",
-    "sellername": "Latu",
+    "sellername": "Galib",
     "email": "haba6@gmail.com",
     "isbooked": "no",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
   {
     "idno": 2,
@@ -74,10 +82,12 @@
     "orginalprice": "110000",
     "used": "2 years",
     "condition": "not bad",
-    "sellername": "Fuad",
+    "sellername": "Shawun",
     "email": "haba7@gmail.com",
     "isbooked": "no",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
 
   {
@@ -91,10 +101,12 @@
     "orginalprice": "77500",
     "used": "9 months",
     "condition": "good",
-    "sellername": "Shariful",
+    "sellername": "Galib",
     "email": "haba6@gmail.com",
     "isbooked": "no",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   },
   {
     "idno": 3,
@@ -110,6 +122,8 @@
     "sellername": "Mahin",
     "email": "haba9@gmail.com",
     "isbooked": "no",
-    "ispaid": "no"
+    "ispaid": "no",
+    "date": "",
+    "status": "available"
   }
 ]
