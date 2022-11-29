@@ -79,6 +79,12 @@ async function run() {
 
       res.send(bookedItems);
     });
+    // add to  booked
+    app.post("/addbooked", async (req, res) => {
+      const booked = req.body;
+      const result = await bookedCollection.insertOne(booked);
+      res.send(result);
+    });
   } finally {
   }
 }

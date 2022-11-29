@@ -11,7 +11,8 @@
     "used": "6 months",
     "condition": "Good",
     "sellername": "Galib",
-    "email": "haba6@gmail.com"
+    "email": "haba6@gmail.com",
+    "isbooked": "yes"
   },
   {
     "idno": 1,
@@ -25,7 +26,8 @@
     "used": "8 months",
     "condition": "Good",
     "sellername": "Shawun",
-    "email": "haba7@gmail.com"
+    "email": "haba7@gmail.com",
+    "isbooked": "no"
   },
   {
     "idno": 1,
@@ -39,7 +41,8 @@
     "used": "1 year",
     "condition": "Good",
     "sellername": "Sakhwat",
-    "email": "haba9@gmail.com"
+    "email": "haba9@gmail.com",
+    "isbooked": "yes"
   },
   {
     "idno": 2,
@@ -53,7 +56,8 @@
     "used": "",
     "condition": "",
     "sellername": "Latu",
-    "email": "haba6@gmail.com"
+    "email": "haba6@gmail.com",
+    "isbooked": "no"
   },
   {
     "idno": 2,
@@ -67,22 +71,10 @@
     "used": "",
     "condition": "",
     "sellername": "Fuad",
-    "email": "haba7@gmail.com"
+    "email": "haba7@gmail.com",
+    "isbooked": "no"
   },
-  {
-    "idno": 2,
-    "brand": "Iphone",
-    "img": "",
-    "name": "Galaxy A7",
-    "picture": "",
-    "location": "",
-    "resaleprice": "",
-    "orginalprice": "",
-    "used": "",
-    "condition": "",
-    "sellername": "Shakil",
-    "email": "haba7@gmail.com"
-  },
+
   {
     "idno": 3,
     "brand": "Oneplus",
@@ -95,7 +87,8 @@
     "used": "",
     "condition": "",
     "sellername": "Shariful",
-    "email": "haba6@gmail.com"
+    "email": "haba6@gmail.com",
+    "isbooked": "no"
   },
   {
     "idno": 3,
@@ -109,20 +102,7 @@
     "used": "",
     "condition": "",
     "sellername": "Mahin",
-    "email": "haba9@gmail.com"
-  },
-  {
-    "idno": 3,
-    "brand": "Oneplus",
-    "img": "",
-    "name": "Galaxy A7",
-    "picture": "",
-    "location": "",
-    "resaleprice": "",
-    "orginalprice": "",
-    "used": "",
-    "condition": "",
-    "sellername": "Rakib",
-    "email": "haba6@gmail.com"
+    "email": "haba9@gmail.com",
+    "isbooked": "no"
   }
 ]
