@@ -31,6 +31,9 @@ async function run() {
       .collection("products");
 
     const bookedCollection = client.db("usedphones-hub").collection("booked");
+    const advertisedCollection = client
+      .db("usedphones-hub")
+      .collection("advertiseditems");
 
     const userCollection = client.db("usedphones-hub").collection("users");
 
@@ -114,6 +117,33 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const result = await productCollection.deleteOne(query);
       res.send(result);
+    });
+
+    // add to advertise
+
+    app.put("/advertise/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: ObjectId(id) };
+
+      // const book = req.body;
+      // const newname = book.name;
+      // const newbody = book.body;
+
+      const updatedstatus = {
+        $set: {
+          isadvertised: "yes",
+        },
+      };
+      const result = await productCollection.updateOne(filter, updatedstatus);
+      res.send(result);
+    });
+
+    // Load advertised
+    app.get("/advertised", async (req, res) => {
+      const id = parseInt(req.params.id);
+      const query = { isadvertised: "yes" };
+      const products = await productCollection.find(query).toArray();
+      res.send(products);
     });
   } finally {
   }

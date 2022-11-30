@@ -15,7 +15,8 @@
     "isbooked": "yes",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "no"
   },
   {
     "idno": 1,
@@ -33,7 +34,8 @@
     "isbooked": "no",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "no"
   },
   {
     "idno": 1,
@@ -51,7 +53,8 @@
     "isbooked": "yes",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "no"
   },
   {
     "idno": 2,
@@ -69,7 +72,8 @@
     "isbooked": "no",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "yes"
   },
   {
     "idno": 2,
@@ -87,7 +91,8 @@
     "isbooked": "no",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "no"
   },
 
   {
@@ -106,7 +111,8 @@
     "isbooked": "no",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "yes"
   },
   {
     "idno": 3,
@@ -124,6 +130,7 @@
     "isbooked": "no",
     "ispaid": "no",
     "date": "",
-    "status": "available"
+    "status": "available",
+    "isadvertised": "no"
   }
 ]
