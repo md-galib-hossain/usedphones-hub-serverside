@@ -40,5 +40,11 @@
     "email": "haba9@gmail.com",
     "usertype": "Seller",
     "isverified": "No"
+  },
+  {
+    "name": "haba5",
+    "email": "haba5@gmail.com",
+    "usertype": "Buyer",
+    "isverified": "No"
   }
 ]

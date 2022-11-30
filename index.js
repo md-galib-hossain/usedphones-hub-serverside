@@ -5,6 +5,8 @@ require("dotenv").config();
 const cors = require("cors");
 const port = process.env.PORt || 5000;
 
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
 // middleware
 app.use(cors());
 app.use(express.json());
@@ -25,6 +27,9 @@ async function run() {
     const categoryCollection = client
       .db("usedphones-hub")
       .collection("categories");
+    const paymentCollection = client
+      .db("usedphones-hub")
+      .collection("payments");
 
     const productCollection = client
       .db("usedphones-hub")
@@ -36,6 +41,9 @@ async function run() {
       .collection("advertiseditems");
 
     const userCollection = client.db("usedphones-hub").collection("users");
+    const reportCollection = client
+      .db("usedphones-hub")
+      .collection("reporteditems");
 
     //Load Category
     app.get("/category", async (req, res) => {
@@ -141,7 +149,7 @@ async function run() {
     // Load advertised
     app.get("/advertised", async (req, res) => {
       const id = parseInt(req.params.id);
-      const query = { isadvertised: "yes" };
+      const query = { $and: [{ isadvertised: "yes" }, { ispaid: "no" }] };
       const products = await productCollection.find(query).toArray();
       res.send(products);
     });
@@ -189,7 +197,7 @@ async function run() {
       res.send(result);
     });
 
-    // delete user
+    // delete user seller
     app.delete("/deleteuser/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
@@ -202,6 +210,63 @@ async function run() {
       const query = { usertype: "Buyer" };
       const users = await userCollection.find(query).toArray();
       res.send(users);
+    });
+
+    // delete buyer
+    app.delete("/deletebuyer/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await userCollection.deleteOne(query);
+      res.send(result);
+    });
+
+    //  report an item
+    app.post("/report", async (req, res) => {
+      const reported = req.body;
+
+      const result = await reportCollection.insertOne(reported);
+      res.send(result);
+    });
+
+    //  get reported
+    //
+    app.get("/reporteditems", async (req, res) => {
+      const query = {};
+      const reportedItem = await reportCollection.find(query).toArray();
+
+      res.send(reportedItem);
+    });
+    // stripe payment
+    app.post("/create-payment-intent", async (req, res) => {
+      const booked = req.body;
+      const price = booked.resaleprice;
+      const amount = price * 100;
+
+      const paymentIntent = await stripe.paymentIntents.create({
+        currency: "usd",
+        amount: amount,
+        payment_method_types: ["card"],
+      });
+      res.send({
+        clientSecret: paymentIntent.client_secret,
+      });
+    });
+    // adding payments to database
+    app.post("/payments", async (req, res) => {
+      const payment = req.body;
+      const result = await paymentCollection.insertOne(payment);
+      const id = payment.bookingId;
+      const filter = { _id: ObjectId(id) };
+      const updatedDoc = {
+        $set: {
+          ispaid: "yes",
+        },
+      };
+      const updatedResult = await bookedCollection.updateOne(
+        filter,
+        updatedDoc
+      );
+      res.send(result);
     });
   } finally {
   }

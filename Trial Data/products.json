@@ -16,7 +16,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "no"
+    "isadvertised": "no",
+    "isreported": "no"
   },
   {
     "idno": 1,
@@ -35,7 +36,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "no"
+    "isadvertised": "no",
+    "isreported": "no"
   },
   {
     "idno": 1,
@@ -54,7 +56,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "no"
+    "isadvertised": "no",
+    "isreported": "no"
   },
   {
     "idno": 2,
@@ -73,7 +76,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "yes"
+    "isadvertised": "yes",
+    "isreported": "no"
   },
   {
     "idno": 2,
@@ -92,7 +96,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "no"
+    "isadvertised": "no",
+    "isreported": "no"
   },
 
   {
@@ -112,7 +117,8 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "yes"
+    "isadvertised": "yes",
+    "isreported": "no"
   },
   {
     "idno": 3,
@@ -131,6 +137,7 @@
     "ispaid": "no",
     "date": "",
     "status": "available",
-    "isadvertised": "no"
+    "isadvertised": "no",
+    "isreported": "no"
   }
 ]
