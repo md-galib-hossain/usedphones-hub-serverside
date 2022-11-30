@@ -1,12 +1,44 @@
 [
   {
-    "displayName": "haba2",
+    "name": "haba2",
     "email": "haba2@gmail.com",
-    "usertype": "Buyer"
+    "usertype": "Buyer",
+    "isverified": "No"
   },
   {
-    "displayName": "haba3",
+    "name": "haba3",
     "email": "haba3@gmail.com",
-    "usertype": "Buyer"
+    "usertype": "Buyer",
+    "isverified": "No"
+  },
+  {
+    "name": "Galib",
+    "email": "galibph@gmail.com",
+    "usertype": "Admin",
+    "isverified": "Yes"
+  },
+  {
+    "name": "010_Md Galib Hossain",
+    "email": "mdgalib23@gmail.com",
+    "usertype": "Buyer",
+    "isverified": "No"
+  },
+  {
+    "name": "haba6",
+    "email": "haba6@gmail.com",
+    "usertype": "Seller",
+    "isverified": "No"
+  },
+  {
+    "name": "haba7",
+    "email": "haba7@gmail.com",
+    "usertype": "Seller",
+    "isverified": "No"
+  },
+  {
+    "name": "haba9",
+    "email": "haba9@gmail.com",
+    "usertype": "Seller",
+    "isverified": "No"
   }
 ]

@@ -145,6 +145,64 @@ async function run() {
       const products = await productCollection.find(query).toArray();
       res.send(products);
     });
+
+    // get seller and admin users
+    app.get("/sellers", async (req, res) => {
+      const query = { $or: [{ usertype: "Seller" }, { usertype: "Admin" }] };
+      const users = await userCollection.find(query).toArray();
+      res.send(users);
+    });
+
+    //  make verify user
+    app.put("/userverify/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: ObjectId(id) };
+
+      const updatedverifiedstatus = {
+        $set: {
+          isverified: "Yes",
+        },
+      };
+
+      const result = await userCollection.updateOne(
+        filter,
+        updatedverifiedstatus
+      );
+      res.send(result);
+    });
+
+    //  make admin user
+    app.put("/makeadmin/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: ObjectId(id) };
+
+      const updatedverifiedstatus = {
+        $set: {
+          usertype: "Admin",
+        },
+      };
+
+      const result = await userCollection.updateOne(
+        filter,
+        updatedverifiedstatus
+      );
+      res.send(result);
+    });
+
+    // delete user
+    app.delete("/deleteuser/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await userCollection.deleteOne(query);
+      res.send(result);
+    });
+
+    // get all buyers
+    app.get("/buyers", async (req, res) => {
+      const query = { usertype: "Buyer" };
+      const users = await userCollection.find(query).toArray();
+      res.send(users);
+    });
   } finally {
   }
 }
